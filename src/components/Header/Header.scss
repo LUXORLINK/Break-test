@@ -1,0 +1,32 @@
+.header {
+	height: 60px;
+	background-color: #000;
+	& > .container {
+		display: flex;
+		align-items: center;
+        justify-content: center;
+		height: 100%;
+	}
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+	&__logo {
+		font-family: sans-serif;
+		color: #fff;
+		font-size: 24px;
+		margin-right: 300px;
+	}
+	&__link {
+		font-family: sans-serif;
+		color: #fff;
+		font-size: 16px;
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+		&.active {
+			text-decoration: underline;
+		}
+	}
+	
+}
